@@ -1,0 +1,109 @@
+﻿body {
+    background-image: url('Images/tile.jpg');
+}
+
+h1 {
+    text-align: center;
+}
+
+#inputNote {
+    position: relative;
+    width: 70%;
+    height: 180px;
+    margin-left: 15%;
+}
+
+    #inputNote textarea {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5em;
+        background-image: url('Images/formbg.jpg');
+    }
+
+    #inputNote input {
+        position: absolute;
+        height: 15%;
+        right: -0px;
+        bottom: 0px;
+        background-color: burlywood;
+    }
+
+#save_now{
+    width:15%;
+    font-size:medium;
+    margin-left: 42.5%;
+    margin-top:30px;
+}
+
+.myNote {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin-left: 30px;
+    float: left;
+    background-image: url('Images/notebg.png');
+    -webkit-animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.myNote > button
+{
+    position:absolute;
+    right:0px;
+    top: 0px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.myNote:hover > button {
+    position:absolute;
+    right:0px;
+    top: 0px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.note
+{
+    position:absolute;
+    margin-left: 5%;
+    width: 80%;
+    margin-top: 30px;
+    overflow-x:scroll;
+    overflow-y:scroll;
+    width: 160px;
+    height: 180px;
+    font-family: 'Pacifico', cursive;
+}
+
+
+.date
+{
+    position:absolute;
+    left: 5px;
+    bottom: 0px;
+}
+
+
+
+.deleteNoteAnimation
+{
+    -webkit-animation: fadeout 4s;
+}
+
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+    
+}

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>MyNotes</title>
+	<meta charset="utf-8" />
+    <link href="MyNotesCss.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Tinos" rel="stylesheet">
+</head>
+<body>
+
+    <h1>
+        <img src="Images/title.png" />
+    </h1>
+
+    <br />
+
+
+    <div id="inputNote">
+        <textarea type="text" id="text" placeholder="please, enter your note and the date and click to save them" required></textarea>
+        <input id="date"  type="date" required />
+    </div>
+    
+
+    <input id="save_now" class="container btn btn-success" type="button" value="Save" />
+
+    <br /> <br />
+
+    <div id="allNotes">
+        <div class="myNote">
+                <button type="button" class="btn btn-default btn-sm " name="delete_now" index="">
+                    <span id="SPA8N" class="glyphicon glyphicon-trash"></span>
+                </button>
+                <p class="note">My notes #1 ; this is for the test. I think that this big success!</p>
+                <p class="date">01.16.2016</p>
+        </div>
+    </div>
+    <script src="MyNotesJs.js"></script>
+</body>
+</html>
